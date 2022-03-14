@@ -6,7 +6,7 @@
 
 ### First resources: Three csv files from Kaggle website 
 
-![Tr](images\transaction_data.JPG)
+![Tr](images/transaction_data.JPG)
 
 The dataset is a about the purchase history of customers across time, along with supporting metadata.
 
@@ -17,12 +17,12 @@ Kaggle files:
 -	transactions_train.csv -  consisting of the purchases each customer for each date, as well as additional information. Duplicate rows correspond to multiple purchases of the same item. 
 
 ### second resources: Extracting data from H&M website by using a tricky api request
-![WA](images\women_product_from_api.JPG)
+![WA](images/women_product_from_api.JPG)
 -	women_articles.csv - include price, title and product name of all women products
 
 
 ### cleaning and dataframe merging process
-![HM](images\customer_df_before_cleaning.JPG)
+![HM](images/customer_df_before_cleaning.JPG)
 
 -	articles.csv - droping some unnecessary columns
 -	customers.csv - imputing and droping null values
