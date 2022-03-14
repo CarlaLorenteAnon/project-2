@@ -20,6 +20,8 @@ Kaggle files:
 ![WA](images/women_product_from_api.JPG)
 -	women_articles.csv - include price, title and product name of all women products
 
+![WA](images/men_product_from_api.png)
+-   men_articles.csv - include price, title, product name of all men products
 
 ### cleaning and dataframe merging process
 ![HM](images/customer_df_before_cleaning.JPG)
@@ -28,7 +30,7 @@ Kaggle files:
 -	customers.csv - imputing and droping null values
 -	transactions_train.csv - converting a column as a datatime column
 -   women_articles.csv - converting price column as integer
-
+-   men_articles.csv - converting price column as integer 
 
 
 
