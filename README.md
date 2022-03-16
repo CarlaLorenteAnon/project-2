@@ -17,31 +17,24 @@ Kaggle files:
 -	transactions_train.csv -  consisting of the purchases each customer for each date, as well as additional information. Duplicate rows correspond to multiple purchases of the same item. 
 
 ### Second resources: Extracting data from H&M website by using a tricky api request
-##### <div align="center"> Table 1: women_articles.csv - include price, title and product name of all women products</div>
+By using an hidden ApI from the Developer tools in H&M website ALL product data in men, women, baby, kids was collected. Bellow table shows one example of our dataframe.
 
-![WA](images/women_product_from_api.JPG)
 
 ##### <div align="center"> Table 2: men_articles.csv - include price, title, product name of all men products</div>
 
 ![WA](images/men_product_from_api.JPG)
 
-##### <div align="center"> Table 3: baby_articles.csv - include price, title, product name of all baby products</div>
 
-![WA](images/baby_product_from_api.JPG)
-
-##### <div align="center"> Table 4: kid_articles.csv - include price, title, product name of all kid products</div>
-
-![WA](images/kid_product_from_api.JPG)
 
 ## Second part : Data Transformation
 For each of the different files, the following data transformations were performed:
 -  **Deduplication**: Identifying and removing duplicate records
--  **Cleaning**: Removing duplicate values
+-  **Cleaning**: Removing null values
 -  **Format revision**: For example, in *transactions_train.csv*, we converted a column as a datatime column. Additionally, in *women_articles.csv*, *men_articles.csv*, *baby_articles.csv* and *kids_articles.csv* the price column was converted to an integer
 -	**Key restructuring**: Establishing key relationships across tables. E.g. the tables relate with each other due to the 2 primary keys: customer_id and article_id.
 -	**Filtering**: Selecting only certain rows and/or columns. 
 ![WA](images/filtering_example.JPG)
--	**Data validation**: Simple or complex data validation – for example, if the first three columns in a row are empty then reject the row from processing
+-	**Data validation**: Simple or complex data validation –  if the first three columns in a row are empty then reject the row from processing
 -	**Summarization**: Values are summarized to obtain total figures
 
 Image of customers file before cleaning
@@ -50,6 +43,12 @@ Image of customers file before cleaning
 
 
 ## Third part : Data Loading
+
+we had 4 dataframe from H&M API that we concatenate them to one dataframe, we had 3 dataframe from kaggle dataset that we merged them to 2 dataframes, and then again we merged them to API dataframe but unfortunetly as dataframes were too big the kernel got dead for loading process so we load dataframe seperately and the big transaction file was made as sample for loading. This below photo shows how 2 dataframe joined in SQL:
+
+![HM](images/sql-join.JPG)
+
+
 
 
 
